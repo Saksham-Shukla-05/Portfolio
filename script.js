@@ -9,20 +9,20 @@ let myModal = document.querySelector('.modal')
 let closeModal = document.querySelector('.close-btn')
 
 
-modal.addEventListener('click',()=>{
-  setTimeout(() => {
-    myModal.style.opacity = 1
-  }, 200);
-  myModal.style.display = "block"
-})
+// modal.addEventListener('click',()=>{
+//   setTimeout(() => {
+//     myModal.style.opacity = 1
+//   }, 200);
+//   myModal.style.display = "block"
+// })
 
-closeModal.addEventListener('click',()=>{
-  myModal.style.opacity = 0
-  setTimeout(() => {
-    myModal.style.display = "none"
-  }, 200);
+// closeModal.addEventListener('click',()=>{
+//   myModal.style.opacity = 0
+//   setTimeout(() => {
+//     myModal.style.display = "none"
+//   }, 200);
 
-})
+// })
 
 c.addEventListener("click", () => {
   if (window.innerWidth <= 956) {
@@ -79,27 +79,27 @@ function whatsapp() {
 chat.addEventListener("click", whatsapp);
 message.addEventListener("click", whatsapp);
 
-document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.querySelector('.modal');
-  var closeButton = modal.querySelector('.close-btn img');
-  var videos = modal.querySelectorAll('.videos iframe');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var modal = document.querySelector('.modal');
+//   var closeButton = modal.querySelector('.close-btn img');
+//   var videos = modal.querySelectorAll('.videos iframe');
 
-  // Event listener for the close button
-  closeButton.addEventListener('click', function () {
-    // Pause the videos when the modal is closed
-    pauseVideos();
-    // Close the modal
-    setTimeout(() => {
-      myModal.style.display = "none"
-    }, 200);
-  });
+//   // Event listener for the close button
+//   closeButton.addEventListener('click', function () {
+//     // Pause the videos when the modal is closed
+//     pauseVideos();
+//     // Close the modal
+//     setTimeout(() => {
+//       myModal.style.display = "none"
+//     }, 200);
+//   });
 
-  function pauseVideos() {
-    videos.forEach(function (video) {
-      // Get the video's src attribute
-      var videoSrc = video.src;
-      // Update the src attribute to pause the video
-      video.src = videoSrc;
-    });
-  }
-});
+//   function pauseVideos() {
+//     videos.forEach(function (video) {
+//       // Get the video's src attribute
+//       var videoSrc = video.src;
+//       // Update the src attribute to pause the video
+//       video.src = videoSrc;
+//     });
+//   }
+// });
