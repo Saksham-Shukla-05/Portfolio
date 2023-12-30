@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+            background-color: #7843e9;
+        }
+        h1 {
+            text-align: center;
+            font-size: larger;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .videos {
+            border: 2px solid black;
+            height: 200px;
+            margin-top: 10px;
+            padding: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This section contains video solution of 1st Internal</h1>
+    <div class="container">
+        <div class="videos" id="video1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-0rOoCSwGBA?si=V7ciV9WjLdvHIkeW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="videos" id="video2">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DP086v1XNY8?si=YFzU4Y0ogOEN1T85" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
