@@ -105,10 +105,4 @@ message.addEventListener("click", whatsapp);
 // });
 
 // Assuming this is the function handling the button click
-function navigateToInternal1() {
-  // Reload the current page (index.html)
-  location.reload(true); // Passing true forces a reload from the server, clearing the cache
-  
-  // Navigate to internal1.html after the page is reloaded
-  window.location.href = 'internal1.html';
-}
+
